@@ -43,7 +43,7 @@ class Solution {
         int gap = (int)Math.ceil((m + n) / 2.0);
         while(gap > 0){
             int i = 0, j = i + gap;
-            while(i < nums1.length && j < nums1.length){
+            while(j < nums1.length){
                 if(nums1[i] > nums1[j]){
                     int temp = nums1[i];
                     nums1[i] = nums1[j];
