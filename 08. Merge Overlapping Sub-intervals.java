@@ -1,4 +1,6 @@
-// Optimal -> O(nlogn)
+// Brute -> Time:O(nlogn + n^2), Space:O(n)
+
+// Optimal -> O(nlogn + n), Space:O(n)
 class Solution {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
